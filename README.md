@@ -28,11 +28,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.jpeg)
 ### Links
 
 - Solution URL: [https://github.com/ZionCodes1/results-summary-component.git]
-- Live Site URL: [https://taupe-naiad-91a374.netlify.app]
+- Live Site URL: [https://ornate-valkyrie-aca4d6.netlify.app]
 
 ## My process
 
