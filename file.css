@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(HankenGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont1;
+    src: url(HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont2;
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, hsla(252, 100%, 67%), hsla(241, 81%, 54%));
+    text-align: center;
+    border-radius: 0 0 31px 31px;
+    color: hsl(0, 0%, 100%);
+    height: 23em;
+    flex: 0 0 60%;
+    margin-right: 8px;
+}
+
+.main-heading h4 {
+    color: hsla(241, 100%, 89%, 0.9);
+    margin-top: 1rem;
+    font-family: myFirstFont;
+    font-size: 1.1rem;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 130px;
+    height: 130px;
+    border: 1px solid inherit;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.middle-number {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    padding-top: 2rem;
+    font-family: myFirstFont1;
+}
+
+.middle-2number {
+    text-align: center;
+    font-family: myFirstFont;
+    color: hsla(241, 100%, 89%, 0.5);
+    padding-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+
+.second-heading {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-family: myFirstFont;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+}
+
+.first-p {
+    text-align: center;
+    margin-top: 1.1rem;
+    font-family: myFirstFont2;
+    font-size: 1rem;
+    color: hsla(241, 100%, 89%, 0.9);
+    margin-bottom: 1.9rem;
+    width: 70%;
+    align-self: center;
+}
+
+.second-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+    flex: 0 0 60%;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    padding: 1em;
+    font-family: myFirstFont;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+}
+
+.reaction-back {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius: 9px;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+}
+  
+.memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.memory-back {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius: 9px;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+}
+  
+.verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+.verbal-back {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius: 9px;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+}
+  
+.visual {
+    color: hsl(234, 85%, 45%);
+}
+
+.visual-back {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    border-radius: 9px;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+}
+
+.second-body h4 {
+    font-family: myFirstFont;
+    color: hsl(224, 30%, 27%);
+    font-size: 1.2rem;
+}
+
+.light {
+    color: hsl(224, 30%, 27%, 0.4);
+}
+
+.btn {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid white;
+    border-radius: 5em;
+    height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: myFirstFont;
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 5em;
+}
+
+.btn:hover::before {
+opacity: 1;}
+
+@media (min-width: 800px) {
+    .main-container {
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .main-heading{
+        justify-content: space-evenly;
+         width: 17em;
+        height: 27em;
+        border-radius: 31px;
+        flex: 0 0 55%;
+    }
+
+    .middle {
+        margin-top: 1.2em;
+        width: 170px;
+        height: 170px;
+    }
+
+    .second-body {
+        flex: 0 0 60%;
+        gap: 0.5em;
+        padding: 2.5em;
+    }
+
+    .btn {
+        height: 50px;
+        margin-top: 2rem;
+    }
+
+    .reaction-back {
+        background-color: hsla(0, 100%, 67%, 0.1);
+        border-radius: 9px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .memory-back {
+        background-color: hsla(39, 100%, 56%, 0.1);
+        border-radius: 9px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .verbal-back {
+        background-color: hsla(166, 100%, 37%, 0.1);
+        border-radius: 9px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .visual-back {
+        background-color: hsla(234, 85%, 45%, 0.1);
+        border-radius: 9px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .space {
+            margin-bottom: 0.3em;
+    }   
+}
