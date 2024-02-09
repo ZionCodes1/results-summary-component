@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/ZionCodes1/results-summary-component.git]
-- Live Site URL: [https://ornate-valkyrie-aca4d6.netlify.app]
+- Live Site URL: [https://lovely-cranachan-408824.netlify.app]
 
 ## My process
 
